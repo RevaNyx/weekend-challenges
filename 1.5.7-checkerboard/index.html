@@ -11,17 +11,47 @@
 	<body>
 	
 	<script>
-	    for(var i = 0; i < 49; i++)
-	    {
-	        //create the div elements
-	        //style the divs
-	       var div1 = document.createElement("div");
-	       var div2 = document.createElement("div");
-	       
-	       
-	       
-	       
+	
+//1.Each div should be 60 px in both width and height
+//2.Ensure that the divs alternate between the colors black and red.
+//3.There should be 49 divs in total.
+
+
+	       var divSize = 60;
+	       var redDiv = "red";
+	       var blackDiv = "black";
+	
+//The loop starts with 0. The loop checks if i is less than 49. If so, it runs the createElement code 
+//i++ 49 times in total. (O is counted too!)
+	    for(var i = 0; i < 49; i++) {
+//This is the code being run in the loop. A div element is being created 49 times.
+	        var div = document.createElement("div");
+
+//Access the style property of the divs and set the width and height.
+	        div.style.width = divSize + "px";
+	        div.style.height = divSize + "px";
+	        
+	        
+//Check whether or not i is an even number.  i % 2 returns the remainder when i is divided by 2.
+//If i is even then the remainder will be 0 after being divided by two. So if i modulus 2 should be 
+//equal to 0, the div is even numbered. 
+
+	        if (i % 2 === 0) {
+	            
+//Access the style property of the even numbered divs. Set the background color to black.
+	            div.style.backgroundColor = "black";
+
+//If i % 2 isn't true then the div is odd numnbered.
+	        } else {
+	            
+//Access the style property of all the odd numbered divs. Set the background color to red.
+	            div.style.backgroundColor = "red";
+	        }
+//Apply the new divs to the body of the HTML page.
+	        document.body.appendChild(div);
+	        
 	    }
+	    
 	</script>
 	</body>
 </html>
