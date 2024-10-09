@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                display:flex;
+                flex-wrap: wrap;
+            }
+        </style>
+    </head>
+	<body>
+	
+	<script>
+	for(var i = 0; i < 49; i++){
+        var div = document.creatElement("div");
+
+        if(i % 2 == 0){
+            div.style.backgroundColor = "black";
+        }else {
+            div.style.backgroundColor = "red";
+        }
+
+        div.style.height =  "60px";
+        div.style.width = "14%";
+
+        document.body.appendChild(div);
+    }
+	</script>
+	</body>
+</html>
