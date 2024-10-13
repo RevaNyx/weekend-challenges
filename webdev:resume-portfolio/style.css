@@ -1,0 +1,88 @@
+/* General styling for the body of the page */
+body {
+    font-family: 'Roboto', sans-serif; /* Set the font to 'Roboto' or sans-serif as fallback */
+    margin: 20px; /* Add 20px margin around the body */
+    line-height: 1.6; /* Set line height to 1.6 for readability */
+    background-color: #f4f4f4; /* Light gray background color for the body */
+    color: #333; /* Set text color to a dark gray (#333) */
+    text-align: center; /* Center all text from the body */
+}
+
+/* Styling for h3 headings and general text within sections */
+h3, .section p, .section ul {
+    color: #333; /* Set the color for h3 and paragraphs to dark gray (#333) */
+    display: none; /* Initially hide h3, p, and ul elements */
+}
+
+/* Style for each section of the resume */
+.section {
+    margin-bottom: 20px; /* Add 20px space below each section */
+    padding: 10px; /* Add 10px padding inside each section */
+    border: 2px solid #ccc; /* Light gray border around each section */
+    border-radius: 5px; /* Rounded corners with 5px radius */
+    background-color: #fff; /* Set background color to white */
+    border-style: groove; /* Add a groove-style border around the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow to create a raised effect */
+}
+
+/* Style for list items inside sections */
+.section li {
+    transition: transform 0.3s ease, font-size 0.3s ease; /* Smooth transition for scaling and font size changes */
+}
+
+/* Hover effect for list items */
+.section li:hover {
+    transform: scale(1.1); /* Scale up (enlarge) the list item when hovered */
+    font-size: 1.1em; /* Slightly increase the font size on hover */
+}
+
+/* Additional styling for ul elements within sections */
+.section ul {
+    list-style-position: inside; /* Make sure bullet points are inside the list container */
+    padding: 0; /* Remove padding */
+    margin: 0 auto; /* Center the ul element with automatic margins */
+}
+
+/* Styling for the theme toggle buttons */
+.theme-buttons {
+    display: flex; /* Use flexbox for button layout */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Add 10px space between buttons */
+    margin-bottom: 20px; /* Add margin below the buttons */
+}
+
+/* Base style for the buttons */
+.theme-buttons button {
+    padding: 10px; /* Add padding inside the buttons */
+    margin: 5px; /* Add margin around the buttons */
+    border: none; /* Remove the default button border */
+    cursor: pointer; /* Show pointer cursor when hovering over the buttons */
+    font-size: 16px; /* Set the font size of the buttons */
+    color: white; /* Set text color to white */
+    border-radius: 5px; /* Add rounded corners to the buttons */
+}
+
+/* Styling for the light and dark theme buttons */
+.theme-buttons #light-theme {
+    background-image: linear-gradient(to top right, #b3598c 30%, #ffc2de 67%); /* Light theme color gradient background */
+}
+
+.theme-buttons #dark-theme {
+    background-image: linear-gradient(to top right, #ff99cc 0%, #1b1b1e 100%); /* Dark theme color gradient background */
+}
+
+/* Hover effect for both buttons */
+.theme-buttons button:hover {
+    background-color: #555; /* Change background color to dark gray when hovering */
+}
+
+a {
+    color: #007BFF; /* Default link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+    color: #0056b3; /* Color when hovered */
+    text-decoration: underline; /* Underline the link on hover for emphasis */
+}
+ 
