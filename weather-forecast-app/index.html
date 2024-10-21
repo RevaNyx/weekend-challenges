@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Sets the language of the document to English -->
+<head>
+    <meta charset="UTF-8"> <!-- Defines the character set for the document to UTF-8, this is needed in order to keep extra characters from
+    showing in the temperature results-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper scaling on different devices, especially mobile -->
+    <title>Weather App</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" href="style.css"> <!-- Links to style.css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Preconnect to Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Preconnect to Google Fonts with CORS for cross-origin requests -->
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet"> <!-- Links to the Google Font "Arimo" with different weights and italics options -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Links to the jQuery library -->
+    <script src="config.js"></script> <!-- This file contains my API key -->
+    <script src="script.js"></script> <!-- Links to the external JavaScript file for functionality -->
+</head>
+<body>
+    <div id="clouds"></div> <!-- Div to hold the clouds-->
+    <div id="weather-box"> <!-- Main container for the weather app content -->
+        <h1>Weather Forecast App</h1> <!-- Heading of the app -->
+        <input type="text" id="location" placeholder="Enter city or zip code"> <!-- Input field for entering city or zip code -->
+        <button id="get-weather">SEARCH</button> <!-- Button to trigger the search -->
+        <div class="inline" id="error-message"></div> <!-- Div to display error messages, styled inline -->
+        <div class="weather-container inline" id="current-weather"></div> <!-- Div to display current weather, styled inline -->
+        <div class="weather-container inline" id="extended-forecast"></div> <!-- Div to display extended forecast, styled inline -->
+        <div>
+            <hr>
+            <p id="copyright-tag">&copy; 2024 Tamir Harris</p> <!-- Copyright notice -->
+        </div>
+    </div>
+</body>
+</html>

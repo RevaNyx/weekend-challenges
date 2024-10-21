@@ -1,0 +1,121 @@
+/* Body styling */
+body {
+    background: linear-gradient(to bottom, #121212 3%, #9fbfc9 95%); /* Background gradient, starting dark and fading to a lighter color */
+    font-family: "Arimo", sans-serif; /* Use 'Arimo' font, fallback to sans-serif */
+    display: flex; /* Use flexbox to control the layout of children */
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Center children vertically */
+    color: #9fd7e1; /* Set all text to white */
+    margin: 0;
+    min-height: 100vh;
+    overflow-y:auto;
+    position: relative;
+}
+
+#clouds {
+    position: absolute; /* Positions the GIF absolutely within the body */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://media.giphy.com/media/fBDHEIhKGNveDbdiHn/giphy.gif?cid=ecf05e4725x97temjmhtcjzu16zh7udfye5j0qf7ztuzod5w&ep=v1_gifs_related&rid=giphy.gif&ct=s'); /* Path to your GIF */
+    background-size: cover; /* Ensures the GIF covers the entire area */
+    opacity: 0.4; /* Adjusts the transparency of the GIF */
+    pointer-events: none; /* Ensures the GIF doesn't interfere with other interactions */
+    z-index: -1; /* Moves the GIF behind other content */
+}
+
+/* Horizontal line styling */
+hr {
+    border: 0; /* Remove default border styling */
+    height: 1px; /* Set the thickness of the line */
+    background: #9fbfc9; /* Set the color of the line to match the design */
+}
+
+/* Main weather box styling */
+#weather-box {
+    width: 1000px; /* Set the width of the box to 1000px */
+    margin: 300px auto; /* Center the box horizontally and add 300px margin from the top */
+    padding: 20px; /* Add padding inside the box */
+    border-radius: 20px; /* Round the corners of the box */
+    text-align: center; /* Center the text inside the box */
+    background-color: #282828; /* Set the background color to a dark grey */
+    box-shadow: 1px 5px 15px 10px #9fbfc9; /* Add a soft shadow to the box for depth */
+    opacity: 85%;
+    
+}
+
+/* Shared container styling for weather sections */
+.weather-container {
+    margin-top: 30px; /* Add space above the section */
+    margin-bottom: 30px; /* Add space below the section */
+    background-color: #282828; /* Set background color to dark grey */
+    border-radius: 20px; /* Round the corners */
+   
+}
+
+/* Text input field styling */
+input[type="text"] {
+    width: 80%; /* Set the input width to 80% of the parent container */
+    border: 1px solid; /* Add a solid border of 1px */
+    border-color: black; /* Set the border color to black */
+    border-radius: 20px; /* Round the corners of the input field */
+    margin-bottom: 15px; /* Add space below the input field */
+    font-size: 16px; /* Set the font size */
+    letter-spacing: 4px; /* Add spacing between letters */
+    text-align: center; /* Center the text horizontally in the input */
+    padding: 20px 10px; /* Add 20px padding on top/bottom, 10px on left/right */
+}
+
+/* Focused text input styling */
+input[type="text"]:focus {
+    outline: none; /* Remove the default blue outline on focus */
+    border: 2px solid #6fa0af; /* Increase border thickness and change color when focused */
+}
+
+/* Button styling */
+button {
+    width: 340px; /* Set the width of the button */
+    padding: 10px 20px; /* Add padding: 10px on top/bottom, 20px on left/right */
+    background-color: #121212; /* Set the button background color to very dark grey */
+    color: white; /* Set the button text color to white */
+    border: none; /* Remove the default button border */
+    border-radius: 20px; /* Round the corners of the button */
+    cursor: pointer; /* Change the cursor to pointer when hovering over the button */
+    font-size: 16px; /* Set the font size */
+    transition: background-color 0.3s; /* Smooth background color change over 0.3 seconds */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #127389; /* Change the button background to blue when hovered */
+}
+
+/* Error message styling */
+#error-message {
+    color: rgb(241, 7, 7); /* Set error text color to dark red */
+    font-size: 20px; /* Set font size for the error message */
+    margin-top: 10px; /* Add space above the error message */
+}
+
+/* Heading 2 styling */
+h2 {
+    font-size: 45px; /* Set font size for heading 2 */
+    margin-bottom: 10px; /* Add space below the heading */
+}
+
+/* Paragraph styling */
+p {
+    font-size: 30px; /* Set font size for paragraphs */
+    margin: 5px 0; /* Add vertical spacing: 5px on top/bottom */
+}
+
+/* Heading 3 styling */
+h3 {
+    font-size: 37px; /* Set font size for heading 3 */
+}
+
+ /* Copyright, adjust the size */
+#copyright-tag {
+    font-size: 15px;
+}
