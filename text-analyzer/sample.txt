@@ -1,0 +1,22 @@
+  This is a sample text document. It demonstrates the importance of text analysis in various applications, including natural language 
+  processing, data mining, and information retrieval. Understanding the structure and content of text documents is a fundamental task in 
+  many fields of computer science.
+
+  The text document consists of multiple lines and paragraphs, each containing valuable information. Text analysis allows us to extract 
+  insights, identify patterns, and make data-driven decisions. It plays a crucial role in sentiment analysis, content recommendation, and 
+  search engines.
+
+  A paragraph is a fundamental unit of text organization. It provides a coherent structure to the content, allowing readers to digest 
+  information in manageable chunks. Paragraphs are often used in books, articles, and reports to improve readability and comprehension.
+
+  Analyzing this text is an excellent opportunity to apply the principles of text analysis in practice. By counting words, characters, and 
+  paragraphs, we gain insights into the document's structure. Additionally, identifying the most common words helps us understand the 
+  document's content at a glance.
+
+  Ruby is a powerful programming language that offers a wide range of features for text analysis. Its elegant syntax and rich ecosystem of 
+  libraries make it an excellent choice for working with text data. Whether you're parsing documents, extracting information, or performing 
+  sentiment analysis, Ruby provides the tools to get the job done efficiently.
+
+  Let's explore its features! Ruby's string manipulation capabilities, regular expressions, and built-in methods simplify text analysis tasks. 
+  With Ruby, you can easily read and process text files, apply transformations, and extract valuable insights from textual data. The world of
+  text analysis awaits, and Ruby is your gateway to unlock its potential.
