@@ -109,13 +109,9 @@ def main
     # Print the file contents directly (empty puts to see everything better).
     puts "FILE CONTENTS: #{text}"
     puts
-    puts "NUMBER OF WORDS: #{word_counter(text)}"
+    puts "NUMBER OF WORDS: #{word_counter(text)}   NUMBER OF CHARACTERS: #{count_characters(text)}"
     puts
-    puts "NUMBER OF CHARACTERS: #{count_characters(text)}"
-    puts
-    puts "NUMBER OF PARAGRAPHS: #{para_count(text)}"
-    puts
-    puts "MOST COMMON WORD: #{most_common[0]} (#{most_common[1]} times)"
+    puts "NUMBER OF PARAGRAPHS: #{para_count(text)}   MOST COMMON WORD: #{most_common[0]} (#{most_common[1]} times)"
     puts
     puts "TOP 10 MOST COMMON WORDS: "
     top_10_words(text).each { |word, count| puts "#{word}: #{count}" }
